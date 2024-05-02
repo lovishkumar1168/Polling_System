@@ -1,3 +1,4 @@
+import "./env.js"
 import express from "express";
 import { connectToMongoDBUsingMongoose } from "./src/config/mongooseConfig.js";
 import { questionRouter } from "./src/features/question/routes/question.routes.js";

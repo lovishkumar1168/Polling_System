@@ -38,8 +38,7 @@ export class QuestionRepository{
 
 
             /* adding link_to_vote field in the option document */
-            const BASE_URL = "http://localhost:8000"
-            newOption.link_to_vote = `${BASE_URL}/options/${newOption._id}/add_vote`;
+            newOption.link_to_vote = `${process.env.BASE_URL}/options/${newOption._id}/add_vote`;
             await newOption.save();
 
 
